@@ -12,24 +12,8 @@ import Slider from "react-slick";
     slidetoScroll:3
   }
   return (
-    <div className='w-3/4 mt-10 flex justify-center items-center'>
-      <div className="mp-20 w-[350px] ">
-        <Slider {...settings}>
-  {data.map((d) =>(
-    <div className="bg-white h-[450px] text-black rounded-xl">
-     <div className=" h-55 rounded-t-xl bg-indigo-700 flex justify-center items-center">
-     <img src={d.image}  alt="img1" className="h-44 w-44 rounded-full"/>
-     </div>
-     <div className="flex flex-col justify-center items-center gap-4">
-       <p className="text-xl font-semibold"> {d.name} </p>
-       <p> {d.description}</p>
-       <button className="bg-indigo-500 text-white text-lg px-6 py-2 rounded-xl"> Read more</button>
-     </div>
-     
-    </div>
-  ))}
-  </Slider>
-      </div>
+    <div className="bg-gray-100 h-screen w-3/4">
+      <TodoList />
     </div>
   );
 }
